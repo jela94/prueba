@@ -2,53 +2,79 @@
 <html lang="es">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Formulario</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+   <div class="jumbotron">
     <div id="cabeceras" class="text-center">
         <h1>Formulario de contacto</h1>
     </div>
+    </div>
     
     <div class="container">
-  <ul class="nav nav-tabs">
-    <li ><a href="index.html">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="multimedia.html">Multimedia</a></li>
-    <li class="active"><a href="formulario.html">Contacto</a></li>
-  </ul>
+    <ul class="nav nav-tabs">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
   <br>
 </div>
    
     <div class="container">
-        <form role="form">
+        <form role="form" method="" action="" id="form">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input type="nombre" class="form-control" id="nombre" placeholder="Nombre...">
+                <input type="nombre" class="form-control" id="nombre" placeholder="Nombre..." required>
             </div>
             <div class="form-group">
                 <label for="tlf">Número de teléfono:</label>
-                <input type="text" class="form-control" id="tlf" placeholder="Número de teléfono...">
+                <input type="text" class="form-control" id="tlf" placeholder="Número de teléfono..." required>
             </div>
             <div class="form-group">
                 <label for="name">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Email...">
+                <input type="email" class="form-control" id="email" placeholder="Email..." required>
             </div>
             <div class="form-group">
                 <label for="comentario">Comentario:</label>
-                <textarea class="form-control" rows="3"  placeholder="Comentario..."></textarea>
+                <textarea class="form-control" rows="3"  placeholder="Comentario..." required></textarea>
             </div>
             <div  class="text-center">
             <button type="submit" class="btn btn-default">Enviar</button>
+            <button type="reset" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-erase"></span>
+            </button>
             </div>
         </form>
     </div>
-
+<div class="clearfooter"></div>
+    <div id="footer">
+        <div class="container">
+            <div class="pull-right">
+                <ul id="sprite-rrss">
+                    <li>
+                        <a class="twitter" href="https://twitter.com/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="facebook" href="https://es-es.facebook.com/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="google" href="https://plus.google.com/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="rss" href="http://www.rss.nom.es/" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
